@@ -1,6 +1,6 @@
 # tili0698_9103_tut5
 #### Header 4
-Part 1
+-Part 1
     Since our group has ultimately decided to use Monet's "Saint Georges majeur au crépuscule" for the major assignment, I am hoping to find some paintings with similar water surface ripples for inspiration.
     
     ![An image of Saint Georges majeur au crépuscule](readmeImages/Claude_Monet,_Saint-Georges_majeur_au_crépuscule.jpg Links to an external site.)
@@ -15,4 +15,4 @@ Part 1
 
     ![An image of Starry Night Over the Rhône](readmeImages/Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg Links to an external site.)   
 
-Part 2 
+-Part 2 
