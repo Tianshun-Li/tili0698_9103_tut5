@@ -1,36 +1,52 @@
 # tili0698_9103_tut5
 
-#### Header 3 -Part 1  
+# Major Assignment Design Research
 
-    Since our group has ultimately decided to use Monet's "Saint Georges majeur au crépuscule" for the major assignment, I am hoping to find some paintings with similar water surface ripples for inspiration. 
-    
-        ![An image of Saint Georges majeur au crépuscule](readmeImages/Claude_Monet,_Saint-Georges_majeur_au_crépuscule.jpg Links to an external site.) 
+## Part 1: Imaging Technique Inspiration
 
-    Firstly, the image I found is Monet's "Water Lilies." In this painting, Monet uses color blocks to express the reflection of light on the water surface, which can be replicated using Java.
+Since our group has ultimately decided to use Monet's **"Saint Georges majeur au crépuscule"** for the major assignment, I am exploring other paintings that display similar water surface ripples for inspiration.
 
-    ![An image of Water Lilies](readmeImages/water-lilies-harmony-in-blue.jpg Links to an external site.)
+### 1. Monet's *"Water Lilies"*
 
-    Next, I found Van Gogh's "Starry Night Over the Rhône," where he uses lines to depict the reflection of light on the water.
+![Water Lilies](readmeImages/water-lilies-harmony-in-blue.jpg)
 
-        ![An image of Starry Night Over the Rhône](readmeImages/Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg Links to an external site.)   
+In **Monet's "Water Lilies"**, the artist uses color blocks to represent light reflections on the water surface. This technique can be replicated using code, especially Java, to simulate dynamic ripples and light interactions. The abstract representation of water surface ripples offers a visually compelling method for capturing natural fluidity in our project.
 
-    In Monet's "Saint Georges majeur au crépuscule," there is a significant interaction between light and the water surface. I believe combining the techniques of color blocks and lines in the code will greatly benefit my major assessment.
+### 2. Van Gogh's *"Starry Night Over the Rhône"*
 
--Part 2 
+![Starry Night Over the Rhône](readmeImages/Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg)
 
-    Coding Technique
+In **Van Gogh's "Starry Night Over the Rhône"**, the artist uses lines to depict the reflection of light on the water surface. The use of flowing, curvilinear lines brings an expressive dynamism to the water's appearance, providing inspiration for how we might approach line-based water effects in code.
 
-        ![An image of Full Moon](readmeImages/Full_Moon.png Links to an external site.)   
+### Combining Techniques
 
-        [Full Moon Code and image](https://openprocessing.org/sketch/2290930 Links to an external site.)
+In **Monet's "Saint Georges majeur au crépuscule,"** there is a significant interplay between light and the water surface, which involves both color and line. By combining the color-blocking method seen in *"Water Lilies"* and the line-based reflection seen in *"Starry Night Over the Rhône,"* I believe we can create an impactful visual design for our major assessment.
 
-    This technique uses randomly generated lines of different colors to form color blocks, which I believe is quite similar to the technique used in oil painting. At the same time, this dynamic formation of water surface ripples can make the entire image more impressionistic.
+---
 
-         ![An image of Full Moon](readmeImages/Generative_Typography.png Links to an external site.) 
+## Part 2: Coding Technique Exploration
 
-         [Full Moon Code and image](https://openprocessing.org/sketch/2157583 Links to an external site.)
-    
-    Similarly, this technique uses lines to display water surface ripples. This piece of code can randomly generate ripples while allowing the ripple shapes to be customized, giving more design flexibility to the image.
+### 1. Randomly Generated Color Blocks
+
+![Example of Color Blocks](readmeImages/Full_Moon.png)
+
+[View Full Code Example](https://openprocessing.org/sketch/2290930)
+
+This technique uses randomly generated lines of different colors to form color blocks, similar to the way oil painting captures light reflection through abstract shapes. It provides a dynamic, impressionistic effect that can simulate the fluidity of water surface ripples in our project.
+
+### 2. Customizable Water Ripples
+
+![Example of Ripple Lines](readmeImages/Generative_Typography.png)
+
+[View Ripple Code Example](https://openprocessing.org/sketch/2157583)
+
+Similarly, this technique uses lines to simulate water surface ripples. The code allows for customization of ripple shapes while still preserving randomness, giving us greater design flexibility. This approach can help us achieve a more impressionistic water effect in our project.
+
+---
+
+## Conclusion
+
+By incorporating both randomly generated color blocks and customizable ripple lines, we can recreate the interplay of light and water seen in Monet’s and Van Gogh's works. These coding techniques will enable us to balance abstraction and dynamism, making our major project both visually striking and technically impressive.
 
     
 
