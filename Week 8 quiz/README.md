@@ -18,18 +18,19 @@
 
 -Part 2 
 
-    Coding Technique1
+    Coding Technique
 
         ![An image of Full Moon](readmeImages/Full_Moon.png Links to an external site.)   
 
-        [Full Moon Code and image](https://openprocessing.org/sketch/2290930
-Links to an external site.)
+        [Full Moon Code and image](https://openprocessing.org/sketch/2290930 Links to an external site.)
 
     This technique uses randomly generated lines of different colors to form color blocks, which I believe is quite similar to the technique used in oil painting. At the same time, this dynamic formation of water surface ripples can make the entire image more impressionistic.
 
-    Coding Technique1
-
          ![An image of Full Moon](readmeImages/Generative_Typography.png Links to an external site.) 
-         [Full Moon Code and image](https://openprocessing.org/sketch/2157583
-Links to an external site.)
+
+         [Full Moon Code and image](https://openprocessing.org/sketch/2157583 Links to an external site.)
+    
+    Similarly, this technique uses lines to display water surface ripples. This piece of code can randomly generate ripples while allowing the ripple shapes to be customized, giving more design flexibility to the image.
+
+    
 
