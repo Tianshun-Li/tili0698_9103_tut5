@@ -17,3 +17,19 @@
     In Monet's "Saint Georges majeur au crépuscule," there is a significant interaction between light and the water surface. I believe combining the techniques of color blocks and lines in the code will greatly benefit my major assessment.
 
 -Part 2 
+
+    Coding Technique1
+
+        ![An image of Full Moon](readmeImages/Full_Moon.png Links to an external site.)   
+
+        [Full Moon Code and image](https://openprocessing.org/sketch/2290930
+Links to an external site.)
+
+    This technique uses randomly generated lines of different colors to form color blocks, which I believe is quite similar to the technique used in oil painting. At the same time, this dynamic formation of water surface ripples can make the entire image more impressionistic.
+
+    Coding Technique1
+
+         ![An image of Full Moon](readmeImages/Generative_Typography.png Links to an external site.) 
+         [Full Moon Code and image](https://openprocessing.org/sketch/2157583
+Links to an external site.)
+
