@@ -111,6 +111,20 @@ function windowResized() {
   createParticle(); // Re-generate particles to fit new canvas size
 }
 
+function draw() {
+  background(255); // Set background to white
+  waveAngle += waveSpeed; // Increment wave angle for animation
+
+// Instructions for user controls
+fill(0);
+textAlign(LEFT, TOP);
+textSize(10);
+text("Press 'w' to increase the wave height", 0, height - boardHei + 5 + 40);
+text("Press 's' to decrease the wave height", 0, height - boardHei * 0.8 + 5 + 40);
+text("Press 'a' to decrease the wave speed", width / 2, height - boardHei * 1 + 5 + 40);
+text("Press 'd' to increase the wave speed", width / 2, height - boardHei * 0.8 + 5 + 40);
+text("Press 'space' to increase the Ell height", 0, height - boardHei * 0.6 + 5 + 40);
+}
 
 // Particle class to represent each particle
 class Particle {
