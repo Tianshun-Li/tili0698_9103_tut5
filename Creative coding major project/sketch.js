@@ -115,6 +115,35 @@ function draw() {
   background(255); // Set background to white
   waveAngle += waveSpeed; // Increment wave angle for animation
 
+  // Define gradient colors
+  c1 = color(126, 164, 255);
+  c2 = color(255, 178, 68);
+  c3 = color(144, 183, 255);
+
+  // Draw gradient background from c1 to c3 through c2
+  for (let y = 0; y < height * 0.5; y += 1) {
+    let c = lerpColor(c1, c2, map(y, 0, height * 0.5, 0, 1)); // Interpolate color
+    stroke(c);
+    strokeWeight(1);
+    line(0, y, width, y); // Draw horizontal line for gradient
+  }
+  for (let y = height * 0.5; y < height; y += 1) {
+    let c = lerpColor(c2, c3, map(y, height * 0.5, height, 0, 1));
+    stroke(c);
+    line(0, y, width, y);
+  }
+
+  // Display and update particles' brightness
+  for (let i = 0; i < particles1.length; i++) {
+    particles1[i].checkMouse(); // Adjust size based on mouse proximity
+  }
+  for (let i = 0; i < particles3.length; i++) {
+    particles3[i].display(1); // Display particles normally
+  }
+  for (let i = 0; i < particles2.length; i++) {
+    particles2[i].displayWave(); // Display particles with wave effect
+  }
+
 // Instructions for user controls
 fill(0);
 textAlign(LEFT, TOP);
@@ -141,5 +170,24 @@ class Particle {
     noStroke();
     fill(this.col);
     ellipse(this.x, this.y, this.w * scl, this.h * scl); // Draw particle as an ellipse with scaling
+  }
+  checkMouse() {
+    let scl = 1;
+    let d = dist(this.x, this.y, mouseX, mouseY); // Calculate distance to mouse
+    if (d < 100) scl = map(d, 0, 100, 0.1, 1); // Scale based on distance
+    this.display(scl); // Display particle with new scale
+  }
+
+  displayWave() {
+    noStroke();
+    let h = hue(this.col);
+    let s = saturation(this.col);
+    let b = brightness(this.col) * map(noise(this.noiseCol, mouseX * 0.01), 0, 1, 0.7, 1.3); // Adjust brightness with noise
+    let a = alpha(this.col);
+    colorMode(HSB, 360, 100, 100, 255);
+
+    fill(h, s, b, a); // Fill with updated color
+    colorMode(RGB);
+    ellipse(this.x, this.y + sin(this.x * 0.01 + waveAngle) * waveHeight * 0.5, this.w, this.h * waveEllHei); // Apply wave effect
   }
 }
