@@ -73,6 +73,7 @@ function createParticle() {
    }
 }
 
+// Key press controls for wave properties
 function keyPressed() {
   if (key == 'a') {
     if (waveSpeed >= 0.02) {
@@ -102,6 +103,12 @@ function keyPressed() {
       waveEllHei = 1
     }
   }
+}
+
+// Handle canvas resizing
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  createParticle(); // Re-generate particles to fit new canvas size
 }
 
 
