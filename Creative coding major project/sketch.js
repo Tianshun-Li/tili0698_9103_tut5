@@ -21,6 +21,34 @@ function preload() {
   img3 = loadImage('Assests/house.png'); 
 }
 
+function setup() {
+  createCanvas(windowWidth, windowHeight); // Create canvas with full window size
+  boardHei = 100; // Reserve a 100px area at the bottom for instructions
+  createParticle(); // Generate particles from the images
+}
+
+// Function to create particles from each image
+function createParticle() {
+  particles1 = [];
+  particles2 = [];
+  particles3 = [];
+
+  // Resize img1 and generate particles based on its pixels
+  let imgCopy1 = img1.get();
+
+// Resize to fit canvas height minus boardHei
+  imgCopy1.resize(width, height - boardHei); 
+  for (let x = 0; x < imgCopy1.width; x += partSize1) {
+    for (let y = 0; y < imgCopy1.height; y += partSize1) {
+      let c = imgCopy1.get(x, y); // Get color at (x, y)
+      // Only create particles if brightness is above zero
+      if (brightness(color(c)) > 0) { 
+        particles1.push(new Particle(x, y, c, partSize1, partSize1));
+      }
+    }
+  }
+}
+
 
 // Particle class to represent each particle
 class Particle {
