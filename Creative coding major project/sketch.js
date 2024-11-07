@@ -47,6 +47,19 @@ function createParticle() {
       }
     }
   }
+  
+  // Resize img2 and generate particles
+  let imgCopy2 = img2.get();
+  imgCopy2.resize(width, height - boardHei);
+  for (let x = 0; x < imgCopy2.width; x += partSize2) {
+    for (let y = 0; y < imgCopy2.height; y += partSize2) {
+      let c = imgCopy2.get(x, y);
+      if (brightness(color(c)) > 0) {
+        particles2.push(new Particle(x, y, c, partSize2 * 2, partSize2 * 0.8)); // Use different dimensions
+      }
+    }
+  }
+
 }
 
 
