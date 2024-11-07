@@ -73,17 +73,34 @@ function createParticle() {
    }
 }
 
-// Key press controls for wave properties
 function keyPressed() {
-  if (key == 'a' && waveSpeed >= 0.02) waveSpeed -= 0.02; 
-  if (key == 'd' && waveSpeed < 0.2) waveSpeed += 0.02; 
-  if (key == 'w' && waveHeight < 40) waveHeight += 10; 
-  if (key == 's' && waveHeight > 0) waveHeight -= 10; 
-  
+  if (key == 'a') {
+    if (waveSpeed >= 0.02) {
+      waveSpeed -= 0.02
+    }
+  }
+  if (key == 'd') {
+    if (waveSpeed < 0.2) {
+      waveSpeed += 0.02
+    }
+  }
+
+  if (key == 'w') {
+    if (waveHeight < 40) {
+      waveHeight += 10
+    }
+  }
+  if (key == 's') {
+    if (waveHeight > 0) {
+      waveHeight -= 10
+    }
+  }
   // Toggle elliptical wave height between 1 and 1.5
-  if (key == ' ') { 
-    waveEllHei += 0.05;
-    if (waveEllHei >= 1.5) waveEllHei = 1;
+  if (key == ' ') {
+    waveEllHei += 0.05
+    if (waveEllHei >= 1.5) {
+      waveEllHei = 1
+    }
   }
 }
 
