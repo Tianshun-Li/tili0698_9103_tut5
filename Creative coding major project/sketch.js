@@ -119,7 +119,7 @@ function draw() {
   c2 = color(255, 178, 68);
   c3 = color(144, 183, 255);
 
-  // Draw gradient background from c1 to c3 through c2
+  // Draw gradient background from c1 to c3 through c2  lerpcolor() https://p5js.org/reference/p5/lerpColor/
   for (let y = 0; y < height * 0.5; y += 1) {
     let c = lerpColor(c1, c2, map(y, 0, height * 0.5, 0, 1)); // Interpolate color
     stroke(c);
