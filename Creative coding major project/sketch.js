@@ -10,7 +10,7 @@ let partSize3 = 10; // Size of particles for img3
 let c1, c2, c3; // Colors for the background gradient
 let waveHeight = 10, waveSpeed = 0.02; // Wave effect properties
 let waveAngle = 0; // Angle for wave oscillation
-let waveEllHei = 1; // Vertical scaling factor for wave effect
+let waveEllHei = 1; // Vertical scaling factor for wave effect  ellipse() https://p5js.org/reference/p5/ellipse/
 let boardHei; // Height of the area reserved for instructions
 
 // Preload images before the canvas is created
