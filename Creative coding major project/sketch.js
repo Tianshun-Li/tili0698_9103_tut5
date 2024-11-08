@@ -7,7 +7,6 @@ let particles3 = []; // Array to hold particles for the third image
 let partSize1 = 30; // Size of particles for img1
 let partSize2 = 25; // Size of particles for img2
 let partSize3 = 10; // Size of particles for img3
-let bgColor; // Variable for background color (not used here)
 let c1, c2, c3; // Colors for the background gradient
 let waveHeight = 10, waveSpeed = 0.02; // Wave effect properties
 let waveAngle = 0; // Angle for wave oscillation
